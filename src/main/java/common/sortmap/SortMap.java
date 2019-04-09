@@ -13,12 +13,13 @@ public class SortMap {
         });
         System.out.println(list);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Map<Integer,User> map=new HashMap<>();
         map.put(22,new User("aa",1));
         map.put(11,new User("bb",11));
         map.put(33,new User("cc",3));
         sortValueMap(map);
+        map=new TreeMap<>(new MyComparable());
     }
    static class MyComparable implements Comparator<Integer> {
         @Override
