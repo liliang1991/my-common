@@ -1,5 +1,8 @@
 package suanfa;
 
+/*
+大整数相加
+ */
 public class BigerAdd {
     public static String add(String a, String b) {
         a = new StringBuffer(a).reverse().toString();
@@ -24,24 +27,23 @@ public class BigerAdd {
             int num = Integer.parseInt(a.charAt(i) + "") + Integer.parseInt(b.charAt(i) + "");
 
             if (num > 10) {
-                result.append(num - 10 +maxover);
-
+                result.append(num - 10 + maxover);
 
 
                 maxover = 1;
-            }else {
-                if(num+maxover>=10){
-                    if(i==a.length()-1){
-                        result.append(new StringBuffer((maxover+num)+"").reverse());
+            } else {
+                if (num + maxover >= 10) {
+                    if (i == a.length() - 1) {
+                        result.append(new StringBuffer((maxover + num) + "").reverse());
 
 
-                    }else {
+                    } else {
                         result.append(num + maxover - 10);
                         maxover = 1;
                     }
-                }else{
-                    result.append(num+maxover);
-                    maxover=0;
+                } else {
+                    result.append(num + maxover);
+                    maxover = 0;
 
                 }
 
@@ -54,6 +56,6 @@ public class BigerAdd {
     public static void main(String[] args) {
         String a = "99111";
         String b = "2222";
-        System.out.println(add(a,b));
+        System.out.println(add(a, b));
     }
 }

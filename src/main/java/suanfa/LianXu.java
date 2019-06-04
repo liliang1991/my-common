@@ -1,5 +1,7 @@
 package suanfa;
-
+/*
+连续和最大的组合
+ */
 public class LianXu {
     public static void main(String[] args) {
         int a[]={-1,8,-10,3,7,-15};
