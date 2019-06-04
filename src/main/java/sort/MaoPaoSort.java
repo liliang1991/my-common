@@ -1,5 +1,8 @@
 package sort;
 
+/**
+ * 冒泡排序
+ */
 public class MaoPaoSort {
     public static void maopao(int [] a){
         for(int i=0;i<a.length;i++){

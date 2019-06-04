@@ -1,5 +1,8 @@
 package sort;
 
+/*
+快速排序
+ */
 public class QuickSort {
     public void quickSort(int[] a, int left, int right) {
         if (left < right) {
@@ -12,7 +15,7 @@ public class QuickSort {
                 while (i < j && a[j] > key) {
                     j--;
                 }
-                if(i<j){
+                if (i < j) {
                     a[i++] = a[j];
 
                 }
@@ -20,14 +23,14 @@ public class QuickSort {
                     i++;
 
                 }
-                if(i<j){
+                if (i < j) {
                     a[j--] = a[i];
 
                 }
             }
-            a[i]=key;
-            quickSort(a,left,i-1);
-            quickSort(a,i+1,right);
+            a[i] = key;
+            quickSort(a, left, i - 1);
+            quickSort(a, i + 1, right);
 
 
         }
