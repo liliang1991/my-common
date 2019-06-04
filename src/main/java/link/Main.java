@@ -1,5 +1,8 @@
 package link;
 
+/**
+ * 链表倒置
+ */
 public class Main {
     public static void main(String[] args) {
 
