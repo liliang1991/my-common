@@ -1,29 +1,31 @@
 package common.bs;
+
 /*
     二叉树
  */
-public class BSSearchTree<T extends Comparable<T>>{
+public class BSSearchTree<T extends Comparable<T>> {
     private Node<T> mRoot;
-    public  Node<T> find(Node<T> node,T v){
-        if(node==null){
+
+    public Node<T> find(Node<T> node, T v) {
+        if (node == null) {
             return node;
         }
-        if(v.compareTo(node.value)<0){
-            find(node.left,v);
-        }else if(v.compareTo(node.value)>0){
-            find(node.right,v);
+        if (v.compareTo(node.value) < 0) {
+            find(node.left, v);
+        } else if (v.compareTo(node.value) > 0) {
+            find(node.right, v);
 
-        }else {
-            return  node;
+        } else {
+            return node;
         }
         return null;
     }
 
-    public class Node<T extends Comparable<T>>{
-      private   T value;
-       private   Node left;
-      private   Node right;
-      private   Node parent;
+    public class Node<T extends Comparable<T>> {
+        private T value;
+        private Node left;
+        private Node right;
+        private Node parent;
 
         public T getValue() {
             return value;
