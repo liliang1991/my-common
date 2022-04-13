@@ -1,5 +1,8 @@
 package link;
 
+/*
+ 链表倒置
+ */
 public class NodeMethod {
     public void printValue(LinkNode node){
         while(node != null){
