@@ -3,7 +3,7 @@ package link;
 /*
  链表倒置
  */
-public class NodeMethod {
+public class NodeReverse {
     public void printValue(LinkNode node){
         while(node != null){
             System.out.print(node.getData()+" ");

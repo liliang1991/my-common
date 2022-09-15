@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         LinkNode head = new Init().InitNode();
-        NodeMethod use = new NodeMethod ();
+        NodeReverse use = new NodeReverse();
         System.out.print("原先的结点是： ");
         use.printValue(head);
         System.out.println();
