@@ -22,8 +22,11 @@ public class NodeReverse {
      */
     public LinkNode reverse(LinkNode head){
         if(head != null) {
+            //前一个节点
             LinkNode h = head ;
+            //当前节点
             LinkNode x = head.getNext();
+            //后一个节点
             LinkNode y = null;
             h.setNext(null);
 
