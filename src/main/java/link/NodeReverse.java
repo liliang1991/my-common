@@ -18,7 +18,7 @@ public class NodeReverse {
      * 链表倒置函数 每一步所执行的操作，把当前结点取出来，指向原本的头结点
      * @param head 头结点
      * @return 倒置后的头结点
-     * @author Harry
+     * @author moon
      */
     public LinkNode reverse(LinkNode head){
         if(head != null) {
