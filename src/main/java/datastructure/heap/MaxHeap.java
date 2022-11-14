@@ -17,7 +17,7 @@ public class MaxHeap<T extends Comparable<T>> {
     /*
      * 最大堆的向上调整算法(从start开始向上直到0，调整堆)
      *
-     * 注：数组实现的堆中，第N个节点的左孩子的索引值是(2N+1)，右孩子的索引是(2N+2)。
+     * 注：数组实现的堆中，第N个节点的左孩子的索引值是(2N+1)，右孩子的索引是(2N+2)，父节点位置是（N-1）/2
      *
      * 参数说明：
      *     start -- 被上调节点的起始位置(一般为数组中最后一个元素的索引)
@@ -112,3 +112,13 @@ public class MaxHeap<T extends Comparable<T>> {
         System.out.printf("\n");
     }
 }
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */

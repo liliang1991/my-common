@@ -16,5 +16,13 @@ public class BSTreeTest {
             tree.insert(arr[i]);
         }
         System.out.println(tree.search(4));
+
+        //删除
+        System.out.print("\n== 删除根节点: " + arr[3]);
+        tree.remove(arr[3]);
+        System.out.print("\n== 中序遍历: ");
+        tree.inOrder();
+        System.out.println();
+
     }
 }

@@ -41,6 +41,21 @@ public class BSTree<T extends Comparable<T>> {
     }
 
     /*
+     * 中序遍历"二叉树"
+     */
+    private void inOrder(BSTNode<T> tree) {
+        if (tree != null) {
+            inOrder(tree.left);
+            System.out.print(tree.key + " ");
+            inOrder(tree.right);
+        }
+    }
+
+    public void inOrder() {
+        inOrder(mRoot);
+    }
+
+    /*
      * 新建结点(key)，并将其插入到二叉树中
      *
      * 参数说明：
